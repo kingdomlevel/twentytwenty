@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "components_presentation_slides",
+  "info": {
+    "name": "Slide",
+    "icon": "th"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "longtext": {
+      "type": "richtext"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

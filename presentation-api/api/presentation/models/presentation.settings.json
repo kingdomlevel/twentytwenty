@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "presentations",
+  "info": {
+    "name": "presentation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "presentations"
+    },
+    "slides": {
+      "type": "dynamiczone",
+      "components": [
+        "presentation.slide"
+      ]
+    }
+  }
+}

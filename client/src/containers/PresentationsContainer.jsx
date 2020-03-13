@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PresentationList from '../components/PresentationList';
 
-const MainContainer = () => {
+const PresentationsContainer = () => {
     const [presentations, setPresentations] = useState([]);
     const [presentation, setPresentation] = useState(null);
 
@@ -15,10 +15,9 @@ const MainContainer = () => {
 
     return (
         <>
-            <p> simple presentation viewer <span role="img" className="big-emoji" aria-label="wind chime emoji">🌱</span> </p>
-            <PresentationList presentations={presentations}/>
+            <PresentationList presentations={presentations} />
         </>
     )
 };
 
-export default MainContainer;
+export default PresentationsContainer;

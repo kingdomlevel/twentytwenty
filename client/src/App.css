@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+
+h1 span {
+  color: red; 
+}
+
+.big-emoji {
+  font-size: x-large;
+}

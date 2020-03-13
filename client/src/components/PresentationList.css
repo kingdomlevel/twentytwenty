@@ -1,0 +1,28 @@
+#presentation-list {
+    /* text-align: initial; */
+    list-style: none;
+}
+
+.presentation-in-list {
+    border: solid 1px black;
+    width: 16em;
+    transition: 0.3s ease background-color;
+}
+
+.presentation-in-list:hover {
+    background-color: rgba(255, 182, 193, 0.2);
+}
+
+.presentation-in-list h3{
+    margin: 0.2em 0;
+    font-weight: normal;
+}
+
+.presentation-in-list p {
+    margin: 0.6em;
+    font-size: 0.9em;
+}
+
+.presentation-in-list p.last-updated {
+    font-size: 0.7em;
+}

@@ -7,6 +7,7 @@
     border: solid 1px black;
     width: 16em;
     transition: 0.3s ease background-color;
+    margin: 1em;
 }
 
 .presentation-in-list:hover {

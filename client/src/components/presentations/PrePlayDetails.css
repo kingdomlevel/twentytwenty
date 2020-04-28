@@ -1,0 +1,32 @@
+.pre-play-details {
+    background-color: white;
+    border: solid 1px black;
+    z-index: 200;
+    position: fixed;
+    width: 40vw;
+    /* min-height: 300px; */
+    left: 30vw;
+    margin: auto;
+    /* top: 50%; */
+    margin-top: -20vh;
+}
+
+.close-link {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin: 0.2em 0.8em;
+    font-size: 1.5em;
+}
+
+.close-link:hover {
+    cursor: pointer;
+}
+
+.start {
+    font-size: larger;
+}
+
+.start span {
+    color: red
+}

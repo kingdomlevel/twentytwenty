@@ -1,0 +1,18 @@
+.users-list {
+    font-size: larger;
+    text-align: initial;
+}
+
+.users-list .username:hover {
+    cursor: pointer;
+}
+
+.user-details {
+    margin-left: 2em;
+    font-size: smaller;
+    /* line-height: 0.6em; */
+}
+
+.user-details p {
+    margin-top: 0.2em;
+}

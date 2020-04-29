@@ -3,6 +3,10 @@
     padding: 0px 1.2em;
     width: fit-content;
     text-align: right;
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    background-color: rgb(255, 255, 255, 0.6);
 }
 
 .present-status p {

@@ -8,7 +8,7 @@ const Header = () => {
                 wenty
                 <span>t</span>wenty
             </h1>
-            <p> simple presentation viewer <span role="img" className="big-emoji" aria-label="wind chime emoji">🌱</span> </p>
+            <p> simple presentation viewer <span role="img" className="big-emoji" aria-label="plant seedling emoji">🌱</span> </p>
         </>
     )
 };

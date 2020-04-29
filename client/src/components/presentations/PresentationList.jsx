@@ -23,7 +23,7 @@ const PresentationList = ({ presentations }) => {
                 onClick={() => presClick(presentation)}>
 
                 <h3>{presentation.title}</h3>
-                {presentation.user.username && <p> by <a className="user-name" href="/">{presentation.user.username}</a></p>}
+                {presentation.user.username && <p> by {presentation.user.username}</p>}
                 
                 <p className="last-updated">last updated: {new Date(presentation.updated_at).toLocaleDateString()}</p>
 

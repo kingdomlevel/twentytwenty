@@ -24,7 +24,7 @@ const PrePlayDetails = () => {
         <div className="pre-play-details">
             <h2>{pres.title}</h2>
             {pres.user.username && (<h3>
-                a presentation by <a className="user-name" href="/">{pres.user.username}</a>
+                a presentation by <a className="user-name" href={`/users/${pres.user.id}`}>{pres.user.username}</a>
             </h3>)}
             <p> {pres.slides.length} slides 
                 ({pres.slides.length * 20} seconds)</p>

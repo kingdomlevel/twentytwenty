@@ -8,7 +8,7 @@ const End = () => {
                 <Navigation/>
             </div>
             <h2>
-                <span role="img" className="big-emoji" aria-label="wind chime emoji">🌱</span>
+                <span role="img" className="big-emoji" aria-label="plant seedling emoji">🌱</span>
             </h2>
             <h1>end</h1>
         </>

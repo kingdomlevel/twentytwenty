@@ -1,0 +1,10 @@
+.present-status {
+    border: solid 1px black;
+    padding: 0px 1.2em;
+    width: fit-content;
+    text-align: right;
+}
+
+.present-status p {
+    margin: 0.2em auto;
+}

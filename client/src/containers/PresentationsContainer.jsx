@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PresentationList from '../components/presentations/PresentationList';
 import PrePlayDetails from '../components/presentations/PrePlayDetails';
 import Header from '../components/Header';
@@ -9,14 +9,14 @@ import PresentContainer from "./PresentContainer";
 const PresentationsContainer = () => {
     const [presentations, setPresentations] = useState([]);
 
-    useState(() => {
+    useEffect(() => {
         console.log("fetching presentations...")
         fetch('http://localhost:1337/presentations')
             .then(res => res.json())
             .then((data) => {
                 setPresentations(data);
             });
-    });
+    }, []);
 
     if (presentations.length === 0) return "no users";
 

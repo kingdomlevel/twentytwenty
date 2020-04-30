@@ -12,21 +12,22 @@
     font-size: 2em;
     line-height: 2em;
     text-align: left;
-    padding: 2em;
 }
 
 .slide-images {
     float: left;
+    width: 45vw;
 }
 
 .slide-images img {
-    padding: 2em;
-    max-height: 45vh;
+    max-height: 38vh;
     max-width: 45vw;
+    padding: 0 1.5em;
 }
 
 .long-text {
-   float: right;
+    padding: 1.5em;
+    float: right;
 }
 
 .long-text ul {

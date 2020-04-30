@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import {Link} from "react-router-dom";
 import { store } from '../../store';
 import './PrePlayDetails.css';
 
@@ -36,9 +35,9 @@ const PrePlayDetails = () => {
             </p>
 
             <p className="start">
-                <Link to={`/present/${pres.id}`}>
+                <a href={`/present/${pres.id}`}>
                     <span>b</span>egin <span>p</span>resenting
-                </Link>
+                </a>
             </p>
             
             <p className="close-link" onClick={closePop}>x</p>

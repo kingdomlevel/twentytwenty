@@ -1,7 +1,7 @@
-import React, {useState, useEffect, useRef} from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./PresentStatus.css";
 
-const PresentStatus = ({slideCount, currentSlide, slideTime}) => {
+const PresentStatus = ({ slideCount, currentSlide, slideTime, paused }) => {
     const [time, setTime] = useState(slideTime / 1000);
 
     // this function from https://overreacted.io/making-setinterval-declarative-with-react-hooks/
@@ -25,18 +25,28 @@ const PresentStatus = ({slideCount, currentSlide, slideTime}) => {
         }, [delay]);
     }
 
+    useEffect((() => {
+        setTime(slideTime / 1000);
+    }), [currentSlide, slideTime]);
+
+    // useEffect(() => {
+
+    // }, [paused])
+
     useInterval(() => {
-        if (time > 1) {
-                setTime(time-1);
-        } else {
-            setTime(slideTime / 1000);
+        if (!paused) {
+            if (time > 1) {
+                setTime(time - 1);
+            } else {
+                setTime(slideTime / 1000);
+            }
         }
     }, 1000);
 
     return (
         <div className="present-status">
             <p>{currentSlide} / {slideCount}</p>
-            <p>{time}</p>
+            <p>{paused ? "⏸" : time}</p>
         </div>
     )
 }

@@ -1,6 +1,12 @@
 .users-list {
     font-size: larger;
     text-align: initial;
+    padding: 2em;
+    list-style: circle;
+}
+
+.users-list li {
+    margin: 1em;
 }
 
 .users-list .username:hover {
@@ -10,7 +16,6 @@
 .user-details {
     margin-left: 2em;
     font-size: smaller;
-    /* line-height: 0.6em; */
 }
 
 .user-details p {

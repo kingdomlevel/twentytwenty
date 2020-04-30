@@ -4,11 +4,22 @@
     z-index: 200;
     position: fixed;
     width: 40vw;
-    /* min-height: 300px; */
     left: 30vw;
+    top: 30vh;
     margin: auto;
-    /* top: 50%; */
-    margin-top: -20vh;
+    padding: 0.8em;
+}
+
+.pre-play-details h2 {
+    margin-bottom: 0.4em;
+}
+
+.pre-play-details h3 {
+    margin-bottom: 0.8em;
+}
+
+.pre-play-details p {
+    line-height: 2em;
 }
 
 .close-link {
@@ -17,6 +28,10 @@
     top: 0px;
     margin: 0.2em 0.8em;
     font-size: 1.5em;
+}
+
+p.close-link {
+    line-height: unset;
 }
 
 .close-link:hover {

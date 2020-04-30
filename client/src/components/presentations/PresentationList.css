@@ -1,6 +1,5 @@
 #presentation-list {
-    /* text-align: initial; */
-    list-style: none;
+    padding: 1em;
 }
 
 .presentation-in-list {
@@ -8,6 +7,7 @@
     width: 16em;
     transition: 0.3s ease background-color;
     margin: 1em;
+    padding: 1em;
 }
 
 .presentation-in-list:hover {

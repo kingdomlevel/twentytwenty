@@ -10,7 +10,6 @@ const PresentationsContainer = () => {
     const [presentations, setPresentations] = useState([]);
 
     useEffect(() => {
-        console.log("fetching presentations...")
         fetch('http://localhost:1337/presentations')
             .then(res => res.json())
             .then((data) => {

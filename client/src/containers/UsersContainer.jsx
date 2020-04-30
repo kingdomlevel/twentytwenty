@@ -10,7 +10,6 @@ const UsersContainer = () => {
     const [users, setUsers] = useState([]);
     
     useState(() => {
-        console.log("fetching users...")
         fetch('http://localhost:1337/users')
         .then(res => res.json())
         .then((data) => {

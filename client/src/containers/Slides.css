@@ -1,27 +1,37 @@
-.long-text {
-    font-size: 2em;
-    text-align: left;
-    min-width: 50vw
-}
-
 .slide-title {
     font-size: 5em;
     padding: 0.5em;
-    min-height: 1.4em;
+    min-height: 2em;
 }
 
 #slide-main {
     line-height: 8em;
+    height: calc(100vh - 5em);
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    line-height: 2em;
+    text-align: left;
+    padding: 2em;
 }
 
 .slide-images {
     float: left;
-    vertical-align: middle;
 }
 
 .slide-images img {
-    max-height: 70vh;
+    padding: 2em;
+    max-height: 45vh;
     max-width: 45vw;
+}
+
+.long-text {
+   float: right;
+}
+
+.long-text ul {
+    list-style: disc;
+    margin-left: 1em;
 }
 
 .end {

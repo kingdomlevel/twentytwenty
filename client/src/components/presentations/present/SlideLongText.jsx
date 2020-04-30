@@ -5,7 +5,7 @@ const SlideLongText = ({raw}) => {
 
     return (
         <div className="long-text">
-            <Markdown options={{forceBlock: true}}>
+            <Markdown options={{}}>
                 {raw}
             </Markdown>
         </div>

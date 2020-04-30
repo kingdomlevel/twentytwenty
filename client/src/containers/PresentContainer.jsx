@@ -6,7 +6,7 @@ import End from "../components/presentations/present/End";
 const PresentContainer = ({presentation}) => {
     // establish state
     const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
-    const slideTime = 5000;     // in milliseconds
+    const slideTime = 20000;     // in milliseconds
 
     // start pres
     useEffect(() => {

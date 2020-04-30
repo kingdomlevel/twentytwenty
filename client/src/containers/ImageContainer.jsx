@@ -3,16 +3,14 @@ import React from "react";
 const ImageContainer = ({images}) => {
     const imageElements = images.map((img, index) => {
         return (
-            <li key={index} >
-                <img alt="temp" src={`http://localhost:1337${img.url}`} />
-            </li>
+            <img alt="temp" key={index} src={`http://localhost:1337${img.url}`} />
         );
     })
     
     return (
-        <ul className="slide-images">
+        <div className="slide-images">
             {imageElements}
-        </ul>
+        </div>
     )
 }
 
